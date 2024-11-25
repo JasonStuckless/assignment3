@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
-import 'food_list_screen.dart';
+import 'order_plan_screen.dart';
 import 'add_food_screen.dart';
 
 void main() {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),  // HomeScreen is the initial screen
-        '/foodList': (context) => const FoodListScreen(),
+        '/foodList': (context) => const OrderPlanScreen(),
         '/addFood': (context) => const AddFoodScreen(),
       },
     );

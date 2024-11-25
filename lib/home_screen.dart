@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'add_food_screen.dart';
-import 'food_list_screen.dart';
+import 'order_plan_screen.dart';
 import 'db_helper.dart';
 import 'edit_order_plan_screen.dart';
 
@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void _navigateToCreateOrderPlanScreen(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const FoodListScreen()),
+      MaterialPageRoute(builder: (context) => const OrderPlanScreen()),
     ).then((_) {
       // After returning from creating a new order plan, refresh the list
       _fetchOrderPlans();

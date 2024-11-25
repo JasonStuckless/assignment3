@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'db_helper.dart';
 
-class FoodListScreen extends StatefulWidget {
-  const FoodListScreen({Key? key}) : super(key: key);
+class OrderPlanScreen extends StatefulWidget {
+  const OrderPlanScreen({Key? key}) : super(key: key);
 
   @override
-  _FoodListScreenState createState() => _FoodListScreenState();
+  _OrderPlanScreenState createState() => _OrderPlanScreenState();
 }
 
-class _FoodListScreenState extends State<FoodListScreen> {
+class _OrderPlanScreenState extends State<OrderPlanScreen> {
   // Controllers for the new order plan
   TextEditingController _targetCostController = TextEditingController();
   DateTime? _selectedDate;
